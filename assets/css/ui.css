@@ -1,0 +1,577 @@
+/* header */
+
+.header-name {
+  padding-left: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.header-logo {
+  widht: 40px;
+  height: 40px;
+}
+
+header {
+  display: flex;
+  height: 60px;
+  padding: 0 1em;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.header-logo-block {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-btn-block {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn {
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+  margin-right: 0.5em;
+}
+
+.signup-btn {
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+  margin-right: 0.5em;
+  background-color: black;
+}
+
+.login-btn:visited,
+.login-btn:link {
+  text-decoration: none;
+  color: black;
+}
+
+.signup-btn:visited,
+.signup-btn:link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+/* nav */
+
+.nav-menu {
+}
+
+.nav-menu-list-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid black;
+  padding: 0 1em;
+}
+
+.nav-menu-list-item-menu:visited,
+.nav-menu-list-item-menu:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* common */
+.hidden {
+  display: none;
+}
+
+/* hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-content h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 1.2em;
+  color: white;
+}
+
+.hero-content button {
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+  background-color: white;
+  font-size: 1.2em;
+}
+
+/* howitworks */
+
+.howitworks {
+  padding: 4em 3em;
+}
+
+.howitworks h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.4em;
+}
+
+.howitworks-list-item {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.howitworks-list-item-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 1.4em;
+}
+
+.howitworks-list-item-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.howitworks-list-item-desc {
+  line-height: 1.4em;
+  font-size: 1.2em;
+}
+
+/* topmeals */
+
+.topmeals {
+  padding: 4em 2em;
+}
+
+.topmeals h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.4em;
+}
+
+.topmeals-list-item {
+  margin-bottom: 3em;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topmeals-list-item-image {
+  height: 0;
+  padding-bottom: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: whitesmoke;
+  margin-bottom: 1em;
+}
+
+.topmeals-list-item-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+  padding: 0 1em;
+}
+
+.topmeals-list-item-desc {
+  padding: 0 1em 3em 1em;
+}
+
+.topmeals-list-item-price {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  width: 4em;
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+  margin-right: 0.5em;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  padding: 4em 3em;
+  background-color: whitesmoke;
+}
+
+footer h4 {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+.footer-navigate {
+  margin-bottom: 4em;
+}
+
+.nav-footer-list-item {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.nav-footer-list-item-menu:visited,
+.nav-footer-list-item-menu:link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-getintouch {
+  margin-bottom: 4em;
+}
+
+.getintouch-list-item {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.footer-followus {
+  margin-bottom: 4em;
+}
+
+.footer-followus-socials {
+  display: flex;
+}
+
+/* login */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 1rem 2rem;
+
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 5rem auto;
+}
+
+.login-form input {
+  padding: 0 0.5rem;
+}
+
+.login-form input,
+.login-form button {
+  display: block;
+  height: 30px;
+  margin-top: 0.4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-form button {
+}
+
+.login-form h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* signup */
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 1rem 2rem;
+
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 5rem auto;
+}
+
+.signup-form input {
+  padding: 0 0.5rem;
+}
+
+.signup-form input,
+.signup-form button {
+  display: block;
+  height: 30px;
+  margin-top: 0.4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.signup-form h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.signup-form h4 {
+  text-align: center;
+}
+
+/* welcome */
+.welcome-main {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-main h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* on the menu */
+.section-lunchbox-meals h1 {
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.meals-list-item {
+  padding: 20px 20px;
+}
+
+.meals-list-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.meals-list-item h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.meals-list-item p {
+  font-size: 20px;
+}
+
+/* login page error */
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+@media (min-width: 1000px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+  }
+
+  .nav-menu-list {
+    display: flex;
+  }
+
+  .nav-menu-list-item {
+    border-bottom: 0;
+    font-size: 1.2em;
+  }
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.4em;
+  }
+
+  .hero-content p {
+    font-size: 1.6em;
+  }
+
+  .hero-content button {
+    padding: 0.5em 4em;
+    border: 2px solid black;
+    font-size: 1.4em;
+  }
+
+  .howitworks-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .howitworks {
+    padding: 4em 3em;
+  }
+
+  .howitworks h1 {
+    font-size: 2.6em;
+  }
+
+  .howitworks-list-item {
+    width: 31%;
+  }
+
+  .howitworks-list-item-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .howitworks-list-item-title {
+    font-size: 1.8em;
+  }
+
+  .howitworks-list-item-desc {
+    line-height: 1.4em;
+    font-size: 1.3em;
+  }
+
+  .topmeals {
+    padding: 4em 8em;
+  }
+
+  .topmeals h1 {
+    font-size: 2.6em;
+  }
+
+  .topmeals-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topmeals-list-item {
+    width: 31%;
+  }
+
+  .topmeals-list-item-image {
+    padding-bottom: 60%;
+  }
+
+  .topmeals-list-item-title {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+  }
+
+  .topmeals-list-item-desc {
+    padding: 0 1em 6em 1em;
+    font-size: 1.2em;
+  }
+
+  .topmeals-list-item-price {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    width: 4em;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-navigate,
+  .footer-getintouch,
+  .footer-followus {
+    width: 20%;
+    text-align: center;
+  }
+
+  .nav-footer-list-item {
+    font-size: 1.3em;
+    line-height: 1.6em;
+  }
+
+  .getintouch-list-item {
+    font-size: 1.3em;
+    line-height: 1.6em;
+  }
+
+  .footer-followus-socials {
+    justify-content: center;
+  }
+  .footer-copyright {
+    margin-top: 4em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  /* login */
+  .login-form {
+    width: 380px;
+  }
+
+  /* signup */
+  .signup-form {
+    width: 380px;
+  }
+
+  /* on the menu */
+
+  .meals-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-lunchbox-meals h1 {
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .meals-list-item {
+    width: 50%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+  }
+
+  .meals-list-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .meals-list-item h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .meals-list-item p {
+    font-size: 20px;
+  }
+
+  .error-message {
+    font-size: 1rem;
+  }
+}
+
+/*
+/: index.html
+/login: 'Login' text
+/signup: 'sign up' text
+/onthemenu: 'On the menu' text
+
+
+
+*/

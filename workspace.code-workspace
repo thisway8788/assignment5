@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../../OOP322/WEB322"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "../../../Downloads/Archive"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "assignment1"
+  }
+}

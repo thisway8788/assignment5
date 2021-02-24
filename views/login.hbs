@@ -1,0 +1,17 @@
+<main class="login-main">
+    <form action="/login" method="POST" class="login-form">
+        <h1>Welcome back</h1>
+        <input type="text" placeholder="Email address" name="email" value="{{data.email}}">
+
+        {{#if data.emailError}}
+        <p class="error-message">Please enter a valid email address.</p>
+        {{/if}}
+
+        <input type="password" placeholder="Password" name="password" value="{{data.password}}">
+        {{#if data.passwordError}}
+        <p class="error-message">Please enter your password.</p>
+        {{/if}}
+        <button>Login</button>
+    </form>
+
+</main>
