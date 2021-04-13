@@ -1,5 +1,5 @@
 /************************************************************************************
- *  WEB322 – Assignment 4 (Winter 2021)
+ *  WEB322 – Assignment 5 (Winter 2021)
  *  I declare that this assignment is my own work in accordance with Seneca Academic
  *  Policy. No part of this assignment has been copied manually or electronically from
  *  any other source (including web sites) or distributed to other students.
@@ -80,6 +80,7 @@ app.get("/", function (req, res) {
         login: req.session.user ? true : false,
         firstName: req.session.user ? req.session.user.firstName : "",
         lastName: req.session.user ? req.session.user.lastName : "",
+        clerk: req.session.user && req.session.user.role == 'clerk',
       },
     });
   });
@@ -289,6 +290,7 @@ app.get("/onthemenu", function (req, res) {
           login: req.session.user ? true : false,
           firstName: req.session.user ? req.session.user.firstName : "",
           lastName: req.session.user ? req.session.user.lastName : "",
+          clerk: req.session.user && req.session.user.role == 'clerk',
         },
       });
     }
@@ -319,6 +321,7 @@ app.get("/clerk-dashboard", function (req, res) {
           lastName,
           login: true,
           meals,
+          clerk: req.session.user && req.session.user.role == 'clerk',
         },
       });
     });
@@ -336,6 +339,7 @@ app.get("/addmeal", function (req, res) {
       firstName: req.session.user.firstName,
       lastName: req.session.user.lastName,
       login: req.session.user ? true : false,
+      clerk: req.session.user && req.session.user.role == 'clerk',
     },
   });
 });
@@ -381,6 +385,7 @@ app.get("/editmeal/:id", function (req, res) {
           lastName: req.session.user.lastName,
           login: req.session.user ? true : false,
           meal,
+          clerk: req.session.user && req.session.user.role == 'clerk',
 
           root: "../",
         },
@@ -436,6 +441,7 @@ app.get("/customer-dashboard", function (req, res) {
       firstName,
       lastName,
       login: true,
+      clerk: req.session.user && req.session.user.role == 'clerk',
     },
   });
 });

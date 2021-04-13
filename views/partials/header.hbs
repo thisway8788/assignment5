@@ -7,7 +7,15 @@
     <div class="header-btn-block">
         
         {{#if login }}
-        <span class="login-name">{{firstName}} {{lastName}}</span>
+
+        {{#if clerk}}
+        <a href="/clerk-dashboard"><span class="login-name">{{firstName}} {{lastName}}</span></a>
+        {{else}}
+
+        <a href="/customer-dashboard"><span class="login-name">{{firstName}} {{lastName}}</span></a>
+
+        {{/if}}
+
          <a class="login-btn" href="/logout">Logout</a>
          {{else}}
          <a class="signup-btn" href="/signup">Sign up</a>
