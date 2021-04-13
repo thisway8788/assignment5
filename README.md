@@ -13,4 +13,4 @@ Course: WEB322NDD
 ## Project URLs
 
 GitHub Repository: https://github.com/thisway8788/assignment3
-Heroku URL: https://git.heroku.com/fathomless-meadow-05154.git/
+Heroku URL: https://cryptic-everglades-68721.herokuapp.com/
