@@ -18,7 +18,7 @@ const bcrypt = require("bcryptjs");
 const clientSessions = require("client-sessions");
 const { User } = require("./models/user");
 const multer = require("multer");
-const { Meal } = require("./models/Meal");
+const { Meal } = require("./models/meal");
 
 const storage = multer.diskStorage({
   destination: "./assets/upload",
