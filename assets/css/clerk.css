@@ -1,0 +1,36 @@
+#clerk-dashboard{
+     
+}
+
+#clerk-dashboard-greeting{
+    margin: 1rem;
+}
+
+
+#clerk-dashboard-btn-container{
+    display: flex;
+    justify-content: flex-end;   
+}
+
+#clerk-dashboard-add-btn {
+    margin: 1rem;
+}
+
+
+#clerk-dashboard-addmeal{
+    padding: 1rem;
+}
+
+#clerk-dashboard-addmeal-btn-container {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+#meal-form-view-image{
+    height: 0;
+    width: 50%;
+    padding-bottom: 30%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 1rem;
+}

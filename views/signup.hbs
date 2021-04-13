@@ -18,8 +18,13 @@
 
 
         <input type="text" placeholder="Email Address" name="email" value="{{data.email}}">
+        
         {{#if data.emailError}}
         <p class="error-message">Please enter a valid email address.</p>
+        {{/if}}
+
+         {{#if data.emailDuplicationError}}
+        <p class="error-message">The email address is already registered</p>
         {{/if}}
 
 

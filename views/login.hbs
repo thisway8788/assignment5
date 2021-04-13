@@ -1,6 +1,11 @@
 <main class="login-main">
     <form action="/login" method="POST" class="login-form">
         <h1>Welcome back</h1>
+
+         {{#if data.emailNotFoundError}}
+        <p class="error-message">Not valid email</p>
+        {{/if}}
+
         <input type="text" placeholder="Email address" name="email" value="{{data.email}}">
 
         {{#if data.emailError}}
@@ -11,6 +16,18 @@
         {{#if data.passwordError}}
         <p class="error-message">Please enter your password.</p>
         {{/if}}
+        
+        <div>
+        <input type="radio" name="role" value="clerk" id="rd_1">
+        <label for="rd_1">Data Entry Clerk</label>
+        </div>
+
+        <div>
+         <input type="radio" name="role" value="customer" id="rd_2" checked>
+        <label for="rd_2">Customer<label>
+        
+        </div>
+
         <button>Login</button>
     </form>
 

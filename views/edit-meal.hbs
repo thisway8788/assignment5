@@ -1,0 +1,83 @@
+<main id="clerk-dashboard-addmeal">
+
+    <h1>Edit a meal kit</h1>
+
+    <form action="/editmeal/{{data.meal._id}}" method="POST" enctype="multipart/form-data">
+        
+        <div class="mb-3">
+            <label for="meal-form-title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="meal-form-title" name="title" value={{data.meal.title}}>
+        </div>
+
+        <div class="mb-3">
+            <label for="meal-form-description" class="form-label">Description</label>
+            <input type="text" class="form-control" id="meal-form-description" name="description" value={{data.meal.description}}>
+        </div>
+
+        <div class="mb-3">
+            <label for="meal-form-price" class="form-label">Price ($)</label>
+            <input type="number" class="form-control" id="meal-form-price" name="price" step="0.01" value={{data.meal.price}}>
+        </div>
+
+            <div class="mb-3">
+            <label for="meal-form-included" class="form-label">Included</label>
+            <input type="text" class="form-control" id="meal-form-included" aria-describedby="includedHelp" name="included" value={{data.meal.included}}>
+            <div id="includedHelp" class="form-text">Comma.......</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="meal-form-category" class="form-label">Category</label>
+            <input type="text" class="form-control" id="meal-form-category" name="category" value={{data.meal.category}}>
+        </div>
+
+        <div class="mb-3">
+            <label for="meal-form-cooking-time" class="form-label">Cooking Time</label>
+            <input type="number" class="form-control" id="meal-form-cooking-time" name="cooking_time" value={{data.meal.cooking_time}}>
+        </div>
+
+
+
+        <div class="mb-3">
+            <label for="meal-form-serving" class="form-label">Serving</label>
+            <input type="number" class="form-control" id="meal-form-serving" name="serving" value={{data.meal.serving}}>
+        </div>
+
+
+        <div class="mb-3">
+            <label for="meal-form-calories" class="form-label">Calories</label>
+            <input type="number" class="form-control" id="meal-form-calories" name="calories" value={{data.meal.calories}}>
+        </div>
+
+        <div class="mb-3">
+            <label for="meal-form-country-style" class="form-label">Country-Style</label>
+            <input type="text" class="form-control" id="meal-form-country-style" name="country_style" value={{data.meal.country_style}}>
+        </div>
+
+
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="meal-form-topmeals" name="topmeal"  {{#if data.meal.topmeal}} checked{{/if}}>
+            <label class="form-check-label" for="meal-form-topmeals" >Top meals</label>
+        </div>
+
+
+  
+
+
+        <div class="mb-3">
+            <label for="meal-form-image" class="form-label">Image</label>
+            <input type="file" class="form-control" id="meal-form-image" name="image" accept="image/jpeg, image/png">
+            <figure style="background-image: url('../assets/upload/{{data.meal.image}}')" id="meal-form-view-image">
+            <input type="hidden" name="image_original" value={{data.meal.image}}>
+            
+        </div>
+
+
+     <div id="clerk-dashboard-addmeal-btn-container"><button type="submit" class="btn btn-primary">Submit</button></div>
+    
+    </form>
+
+
+
+
+</main>

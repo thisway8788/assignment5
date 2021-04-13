@@ -1,0 +1,50 @@
+<main id="clerk-dashboard">
+    <h1 id="clerk-dashboard-greeting">Hello, {{data.firstName}} {{data.lastName}}</h1>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Top meals</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            {{#each data.meals }}
+            <tr data-id={{_id}}>
+                <th scope="row">{{@index}}</th>
+                <th scope="row">{{title}}</th>
+                <th scope="row">{{category}}</th>
+                <th scope="row">{{#if topmeal}}V{{/if}}</th>
+            </tr>
+            {{else}}
+            <tr>
+                <td colspan="4">No Data Available</td>
+            </tr>
+            {{/each}}
+
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+<div id="clerk-dashboard-btn-container">
+    <a href="/addmeal">  <button id="clerk-dashboard-add-btn" type="button" class="btn btn-primary btn-lg">Add</button></a>
+</div>
+
+</main>
+
+<script>
+    const items = document.querySelectorAll('tbody tr');
+    for(let i=0; i<items.length; i++){
+        items[i].addEventListener('click', function(e){
+            const id = e.currentTarget.getAttribute('data-id');
+            location.href = `/editmeal/${id}`;
+        })
+    }
+</script>
