@@ -445,4 +445,4 @@ app.get("/logout", function (req, res) {
   res.redirect("/login");
 });
 
-app.listen(HTTP_PORT, onHttpStart);
+app.listen(process.env.PORT || 3000, onHttpStart);
