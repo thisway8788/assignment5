@@ -368,7 +368,7 @@ app.get("/editmeal/:id", function (req, res) {
   } else if (req.session.user.role != "clerk") {
     res.send("Only visible for clerks");
   }
-
+//
   const id = req.params.id;
   Meal.findOne({ _id: id })
     .exec()
