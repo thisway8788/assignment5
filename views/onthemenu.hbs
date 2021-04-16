@@ -4,7 +4,7 @@
     <div class="meals-list">
 
         {{#each meals}}
-        <div class="meals-list-item">
+        <div class="meals-list-item" data-id="{{_id}}">
 
             <img src="/assets/upload/{{image}}" alt="">
 
@@ -17,3 +17,13 @@
 </section>
 
 {{/each}}
+
+<script>
+    const meals = document.querySelectorAll('.meals-list-item');
+    for (let i=0; i<meals.length; i++){
+        meals[i].addEventListener('click', function(e){
+            const id = e.currentTarget.getAttribute('data-id');
+            location.href = `/onthemenu/${id}`
+        })
+    }
+</script>

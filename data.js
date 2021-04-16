@@ -199,7 +199,7 @@ const data = [
         cookingTime: 10,
         serving: 1,
         caloriesPerServing: 1000,
-        countryStyle: 'Korean',
+        countryStyle: 'Korea',
         imageUrl: '/imgs/bulgogi.jpg',
         topMeal: true
     },
@@ -221,7 +221,7 @@ const data = [
         cookingTime: 5,
         serving: 1,
         caloriesPerServing: 7000,
-        countryStyle: 'Korean',
+        countryStyle: 'Korea',
         imageUrl: '/imgs/kimbob.jpg',
         topMeal: false
     },
@@ -242,7 +242,7 @@ const data = [
         cookingTime: 3,
         serving: 1,
         caloriesPerServing: 300,
-        countryStyle: 'Korean',
+        countryStyle: 'Korea',
         imageUrl: '/imgs/koreanNoodle.jpg',
         topMeal: false
     }
