@@ -215,11 +215,11 @@ app.post("/signup", function (req, res) {
               });
             }
           }
-          //등록완료 페이지 보여줌
+          
           else {
             const sgMail = require("@sendgrid/mail");
             sgMail.setApiKey(
-              "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"
+              process.env.SENDGRID_API_KEY
             );
             const msg = {
               to: req.body.email, // Change to your recipient
